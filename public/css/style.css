@@ -1,0 +1,26 @@
+body {
+    padding-top: 50px;
+}
+
+.post-form,
+.post-item {
+    margin-bottom: 20px;
+}
+.post-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+#user_ {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 5px;
+}
+#lout_ {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px;
+    cursor: pointer;
+}

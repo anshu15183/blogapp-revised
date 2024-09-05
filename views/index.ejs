@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Blog App</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous" />
+		<link rel="icon" type="image/x-icon" href="static/favicon.ico" />
+		<link rel="stylesheet" href="static/css/style.css" />
+
+		<style></style>
+	</head>
+	<body>
+		<div class="container">
+			<p id="user_"></p>
+			<p id="lout_" onclick="location.reload()">LogOut</p>
+			<div class="jumbotron">
+				<center><h1>Blog App</h1></center>
+				<br />
+
+				<!-- Form to create a new post -->
+				<div class="post-form">
+					<div class="form-group">
+						<input id="postTitle" class="form-control" placeholder="Title" />
+					</div>
+					<div class="form-group">
+						<textarea id="postBody" class="form-control" placeholder="Body"></textarea>
+					</div>
+					<button class="btn btn-primary" onclick="createPost()">Create Post</button>
+				</div>
+
+				<!-- Container to display posts -->
+				<div id="postsList"></div>
+			</div>
+
+			<script src="static/js/script.js"></script>
+		</div>
+	</body>
+</html>
